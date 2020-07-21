@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Testing Javascript</title>
+	</head>
+	<body>
+		<div class = "wrapper">
+			<div class = "notification-bar">
+				<img src="../assets/images/notibar.ico">
+			</div>
+			<div class = "middle-box">
+				<div class = "toggle-bar">
+					<div class="exp-menu">
+						<img src="../assets/images/expand.jpg" class="expandimg">
+					</div>
+					<div class = "tog-middle">Calcula...</div>
+					<div class = "tog-middle">Life</div>
+					<div class = "tog-middle">Finance</div>
+					<div class="exp-menu">
+						<img src="../assets/images/menu.jpg" class="menuimg">
+					</div>
+				</div>
+				<div class = "horizontal-bar"></div>
+				<div class = "rows-container" id = "element">
+					<div *ngFor="let object of localStorageReplica">
+						<div class = "row">{{object}}</div>	
+					</div>
+					<div class = "row4">{{expression | calculatorExpression}}</div>
+					<div class = "row5">{{expression | evaluation}}</div>
+				</div> 
+			</div>
+			<div class = "bottom-box">
+				<div class="grid-container">
+				  	<div class="grid-item" (click) = "clearEverything()">
+				  		<img src="../assets/images/C.jpg" class = "cimg">
+				  	</div>
+				  	<div class="grid-item">
+				  		<img src="../assets/images/cross.jpg" (click) = "deleteOperation()" class = "crossimg">
+				  	</div>
+				  	<div class="grid-item" (click) = "stringBuilder('%')">
+				  		<img src="../assets/images/percent.jpg" class = "percentimg">
+				  	</div>
+				  	<div class="grid-item" (click) = "stringBuilder('/')">
+				  		<img src="../assets/images/divide.jpg" class = "divideimg">
+				  	</div>
+					<div class="grid-item" (click) = "stringBuilder(7)">7</div>
+				  	<div class="grid-item" (click) = "stringBuilder(8)">8</div>
+				  	<div class="grid-item" (click) = "stringBuilder(9)">9</div>
+				  	<div class="grid-item" (click) = "stringBuilder('*')">
+				  		<img src="../assets/images/multiply.jpg" class = "multiplyimg">
+				  	</div>
+				  	<div class="grid-item" (click) = "stringBuilder(4)">4</div>
+				  	<div class="grid-item" (click) = "stringBuilder(5)">5</div>
+				  	<div class="grid-item" (click) = "stringBuilder(6)">6</div>
+				  	<div class="grid-item" (click) = "stringBuilder('-')">
+				  		<img src="../assets/images/subtract.jpg" class = "subtractimg">
+				  	</div>
+				  	<div class="grid-item" (click) = "stringBuilder(1)">1</div>
+				  	<div class="grid-item" (click) = "stringBuilder(2)">2</div>
+					<div class="grid-item" (click) = "stringBuilder(3)">3</div>
+				  	<div class="grid-item" (click) = "stringBuilder('+')">
+				  		<img src="../assets/images/add.jpg" class = "addimg">
+				  	</div>
+				  	<div class="grid-item">
+				  		<img src="../assets/images/transform.jpg" class = "transformimg">
+				  	</div>
+				  	<div class="grid-item" (click) = "stringBuilder(0)">0</div>
+				  	<div class="grid-item" (click) = "stringBuilder('.')">.</div>
+				  	<div class="grid-item"  (click) = "solve()">
+				  		<img src="../assets/images/solve.jpg" class = "solveimg">
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

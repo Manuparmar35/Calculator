@@ -1,0 +1,157 @@
+.wrapper {
+	display: block;
+    height: 612px;
+    width: 290px;
+}
+.notification-bar {
+	height: 20px;
+}
+.middle-box {
+	height: 268px;
+	
+}
+.bottom-box {
+	height: fit-content;
+	background-color: white;
+}
+.toggle-bar {
+	height:50px;
+	display: flex;
+}
+.exp-menu {
+	height: 50px;
+	width: 14%;
+	background-color: white;
+}
+.tog-middle {
+	height: 50px;
+    width: 24%;
+    text-align: center;
+    line-height: 34px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+	display: inline-grid;
+	text-align: center;
+	line-height: 69px;
+    height: 69px;
+    font-size: 25px;
+}
+.cimg {
+	width: 20px;
+	height: 20px;
+	position: relative;
+    left: 27px;
+    top: 24px;
+}
+.crossimg {
+	width: 25px;
+	height: 22px;
+	position: relative;
+    left: 27px;
+    top: 24px;
+}
+.percentimg {
+	width: 25px;
+	height: 20px;
+	position: relative;
+    left: 27px;
+    top: 24px;
+}
+.divideimg {
+	width: 25px;
+	height: 20px;
+	position: relative;
+    left: 27px;
+    top: 24px;
+}
+.multiplyimg {
+	width: 20px;
+	height: 20px;
+	position: relative;
+    left: 27px;
+    top: 24px;
+}
+.subtractimg {
+	width: 25px;
+	height: 20px;
+	position: relative;
+    left: 27px;
+    top: 24px;
+}
+.addimg {
+	width: 25px;
+	height: 20px;
+	position: relative;
+    left: 27px;
+    top: 24px;
+}
+.solveimg {
+	width: 50px;
+    height: 42px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+.transformimg {
+	width: 30px;
+    height: 25px;
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+.expandimg {
+	width: 15px;
+    height: 15px;
+    position: relative;
+    left: 14px;
+    top: 8px;
+}
+.menuimg {
+	width: 9px;
+    height: 15px;
+    position: relative;
+    left: 13px;
+    top: 9px;
+}
+.horizontal-bar{
+	width: 265px;
+    height: 1px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    top: 215px;
+    left: 10px;
+}
+.rows-container {
+	height: 199px;
+	display: block;
+	overflow: scroll;
+}
+.rows-container::-webkit-scrollbar {
+	display:none;
+}
+.row {
+	height:33px;
+	width:275px;
+	text-align: right;
+	color: rgba(14,14,14,0.3);
+}
+.row4 {
+	height: 50px;
+	width:275px;
+	text-align: right;
+    padding-right: 20px;
+    line-height: 65px;
+	font-size: 20px;
+	color: rgba(14,14,14,0.8);
+}
+.row5 {
+	height:50px;
+	width:275px;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 45px;
+}
